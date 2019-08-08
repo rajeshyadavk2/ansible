@@ -4,5 +4,5 @@
   tasks:
   - name: install java on ubuntu16 node
     apt:
-      name: "{{ javaonubuntu }}"
+      name: openjdk-8-jre
       state: present
