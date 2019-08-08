@@ -1,8 +1,8 @@
 ---
-- hosts: all
+- hosts: webservers
   become: yes
   tasks:
   - name: install java on ubuntu16 node
     apt:
-      name: "{{javaonubuntu}}"
+      name: "{{ javaonubuntu }}"
       state: present
